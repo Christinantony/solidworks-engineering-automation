@@ -1,0 +1,252 @@
+[
+  {
+    "file": "Assembly Batch rename.swp",
+    "bytes": 59904,
+    "sha256": "362ee36740392686f49723a5ea1211630067689a2fb9d24c3ae4edc204601056",
+    "modules": [
+      "ThisLibrary.frm",
+      "Assembly_Batch_rename1.bas",
+      "Class1.bas",
+      "Class2.bas"
+    ],
+    "published_sources": [
+      "src/assembly-renaming/Assembly_Batch_rename1.bas",
+      "src/assembly-renaming/Class1.cls",
+      "src/assembly-renaming/Class2.cls"
+    ],
+    "status": "Implementation; runtime unverified",
+    "confirmed_behavior": "Tree traversal, unique-part filtering, preview/conflict checks, RenameDocument events, drawing Save As"
+  },
+  {
+    "file": "Batch Rename.swp",
+    "bytes": 31232,
+    "sha256": "4e73870a6beaaec80ed72a41806b350ed9a92695a36425855f0a7d9e8a9ef72a",
+    "modules": [
+      "ThisLibrary.frm",
+      "Batch_Rename1.bas"
+    ],
+    "published_sources": [
+      "experiments/renaming/batch-save-as/Batch_Rename1.bas"
+    ],
+    "status": "Earlier alternative",
+    "confirmed_behavior": "Per-component Save As numbering; distinct approach, not a byte duplicate"
+  },
+  {
+    "file": "Create Drawing.swp",
+    "bytes": 26112,
+    "sha256": "cf222f0da283d89ab4cc9af67717428a79b1e5f9a7ed484e5472d1edbd4a1b6e",
+    "modules": [
+      "ThisLibrary.frm",
+      "Create_Drawing1.bas"
+    ],
+    "published_sources": [
+      "experiments/drawings/create-drawing/Create_Drawing1.bas"
+    ],
+    "status": "Recorded prototype",
+    "confirmed_behavior": "Create a drawing, apply sheet format, insert one front view"
+  },
+  {
+    "file": "Create holes cd.swp",
+    "bytes": 42496,
+    "sha256": "8832deb70597389a2591f6f863f8fb742722d73534c5ca0ca50a545e5aad65d4",
+    "modules": [
+      "ThisLibrary.frm",
+      "Create_holes_cd1.bas"
+    ],
+    "published_sources": [
+      "experiments/hole-wizard/create-holes-cd/Create_holes_cd1.bas"
+    ],
+    "status": "Recorded alternative",
+    "confirmed_behavior": "Different HoleWizard5 parameters"
+  },
+  {
+    "file": "Create holes from sketch points.swp",
+    "bytes": 185344,
+    "sha256": "8a554b0c02b51ce05374381e92af79be2763fa34bc866c184338157f44c468dd",
+    "modules": [
+      "ThisLibrary.frm",
+      "Create_holes_from_sketch_.bas"
+    ],
+    "published_sources": [
+      "src/holes-from-sketch-points/Create_holes_from_sketch_.bas"
+    ],
+    "status": "Interactive prototype",
+    "confirmed_behavior": "Collect selected sketch points and dimensions; map drill code; call HoleWizard5"
+  },
+  {
+    "file": "Create holes new.swp",
+    "bytes": 49664,
+    "sha256": "3ba32078ceb5c834e320dc3b063955ab4e1102ed6ecb1c6a115cf828aad412c5",
+    "modules": [
+      "ThisLibrary.frm",
+      "Create_holes_new1.bas"
+    ],
+    "published_sources": [
+      "experiments/hole-wizard/create-holes-new/Create_holes_new1.bas"
+    ],
+    "status": "Recorded alternative",
+    "confirmed_behavior": "Different HoleWizard5 parameters"
+  },
+  {
+    "file": "Create holes.swp",
+    "bytes": 50176,
+    "sha256": "9245b457c54e4961d6d704a5eb49060016eee78ff59f89c408ab9c4c0c428776",
+    "modules": [
+      "ThisLibrary.frm",
+      "Create_holes1.bas"
+    ],
+    "published_sources": [
+      "experiments/hole-wizard/create-holes/Create_holes1.bas"
+    ],
+    "status": "Recorded experiment",
+    "confirmed_behavior": "Hard-coded HoleWizard5 and sketch-point calls"
+  },
+  {
+    "file": "Drawing template change.swp",
+    "bytes": 23040,
+    "sha256": "4a522da435980ba37c77fa7688716f3e760e618814b69b938dab776a98a99679",
+    "modules": [
+      "ThisLibrary.frm",
+      "Drawing_template_change1.bas"
+    ],
+    "published_sources": [
+      "experiments/drawings/template-stub/Drawing_template_change1.bas"
+    ],
+    "status": "Stub",
+    "confirmed_behavior": "Only connects to Application.SldWorks"
+  },
+  {
+    "file": "Forming Chamber Hole.swp",
+    "bytes": 229376,
+    "sha256": "ad215538c8aee088caa31c5d4e22d3fd5d1ac0e4e03cb206dba72110cced3e58",
+    "modules": [
+      "ThisLibrary.frm",
+      "Main.bas",
+      "Globals.bas",
+      "ExcelIO.bas",
+      "SketchTools.bas",
+      "Relations.bas",
+      "OrdinateDimensions.bas",
+      "Utilities.bas",
+      "clsPoint.bas",
+      "clsPointGroup.bas",
+      "OriginManager.bas",
+      "InputManager.bas"
+    ],
+    "published_sources": [
+      "src/excel-point-importer/clsPoint.cls",
+      "src/excel-point-importer/clsPointGroup.cls",
+      "src/excel-point-importer/ExcelIO.bas",
+      "src/excel-point-importer/Globals.bas",
+      "src/excel-point-importer/InputManager.bas",
+      "src/excel-point-importer/Main.bas",
+      "src/excel-point-importer/OrdinateDimensions.bas",
+      "src/excel-point-importer/OriginManager.bas",
+      "src/excel-point-importer/Relations.bas",
+      "src/excel-point-importer/SketchTools.bas",
+      "src/excel-point-importer/Utilities.bas"
+    ],
+    "status": "Implementation; runtime unverified",
+    "confirmed_behavior": "Excel first-sheet X/Y input, inch-to-meter conversion, origin offsets, coordinate grouping, horizontal/vertical relations"
+  },
+  {
+    "file": "Name the circles drawn.swp",
+    "bytes": 46080,
+    "sha256": "89c3e671fb7938d8e9b648e67fd7cccaea37d0f71d3478a14e2874c72519ff5a",
+    "modules": [
+      "ThisLibrary.frm",
+      "Name_the_circles_drawn1.bas"
+    ],
+    "published_sources": [
+      "experiments/annotations/circle-label/Name_the_circles_drawn1.bas"
+    ],
+    "status": "Prototype",
+    "confirmed_behavior": "Attempt sketch text near selected arc/circle"
+  },
+  {
+    "file": "Name the circles selected in Drawing.swp",
+    "bytes": 47104,
+    "sha256": "9111550b4a27d11c668fcc914a66fa463d8216e0f3b370f3b28e595bddaf3551",
+    "modules": [
+      "ThisLibrary.frm",
+      "Name_the_circles_selected.bas"
+    ],
+    "published_sources": [
+      "experiments/annotations/drawing-label/Name_the_circles_selected.bas"
+    ],
+    "status": "Interactive prototype",
+    "confirmed_behavior": "Sequential notes at selected entity positions; unbounded loop"
+  },
+  {
+    "file": "Name the circles selected.swp",
+    "bytes": 54784,
+    "sha256": "f042496a631c34982724fe978dfecffdd5444a77eb15147f8fdcf94156e51fd7",
+    "modules": [
+      "ThisLibrary.frm",
+      "Name_the_circles_selected1.bas"
+    ],
+    "published_sources": [
+      "experiments/annotations/selected-sketch-label/Name_the_circles_selected1.bas"
+    ],
+    "status": "Interactive prototype",
+    "confirmed_behavior": "Sequential sketch-text labels; unbounded loop"
+  },
+  {
+    "file": "Rename Parts.swp",
+    "bytes": 65024,
+    "sha256": "7dfdf35494639593b93024cc0d9f3007feee48ddd19f2d0985a56d39412ea3bf",
+    "modules": [
+      "ThisLibrary.frm",
+      "Rename_Parts1.bas",
+      "Class1.bas"
+    ],
+    "published_sources": [
+      "experiments/renaming/single-part/Class1.cls",
+      "experiments/renaming/single-part/Rename_Parts1.bas"
+    ],
+    "status": "Prototype",
+    "confirmed_behavior": "Single-part suffix rename and reference event handler"
+  },
+  {
+    "file": "Test Macro for hole.swp",
+    "bytes": 37888,
+    "sha256": "f409eb913ed4a1add082a91e2982ec78e5b2ad48c42cdf44ee6c332c3296dafd",
+    "modules": [
+      "ThisLibrary.frm",
+      "Test_Macro_for_hole1.bas"
+    ],
+    "published_sources": [
+      "experiments/annotations/note-sequence/Test_Macro_for_hole1.bas"
+    ],
+    "status": "Test utility",
+    "confirmed_behavior": "Sequential note placement; does not create holes"
+  },
+  {
+    "file": "test macro for rename.swp",
+    "bytes": 24576,
+    "sha256": "c94ea9f839c1e6b1481e4e61bd36831033e5a59f6436f360b7176b9c16eb18fd",
+    "modules": [
+      "ThisLibrary.frm",
+      "test_macro_for_rename1.bas"
+    ],
+    "published_sources": [
+      "experiments/renaming/recorded-selection/test_macro_for_rename1.bas"
+    ],
+    "status": "Test recording",
+    "confirmed_behavior": "Hard-coded component selection"
+  },
+  {
+    "file": "Test Macro.swp",
+    "bytes": 29184,
+    "sha256": "0cbc9559bcb62d8c9d7ce96ff0accb0f014ea1f5947458ea493218303d3bd46b",
+    "modules": [
+      "ThisLibrary.frm",
+      "Test_Macro1.bas"
+    ],
+    "published_sources": [
+      "experiments/annotations/recorded-note/Test_Macro1.bas"
+    ],
+    "status": "Test recording",
+    "confirmed_behavior": "Recorded selection and note operations"
+  }
+]
