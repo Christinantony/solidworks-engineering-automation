@@ -30,6 +30,22 @@ flowchart LR
 
 The renaming workflow uses a different architecture: assembly traversal → candidate/name preview → conflict checks → rename API → reference-update event handlers → ordered saves → report. This captures a CAD dependency problem, beyond simple filename replacement.
 
+## Illustrated
+
+SolidWorks is not available where this repository is published, so there are no CAD screenshots. The three figures below are computed from the macro sources (`python tools/make_figures.py`) and say so in their footers.
+
+![Assembly renaming: the nine stages of Assembly_Batch_rename1.main, with a preview file in the format the macro writes](assets/rename_workflow.png)
+
+*The nine numbered sections of `Assembly_Batch_rename1.main`, in order. The preview text uses the macro's exact formatting with example file names; the conflict line is what stops the run before anything is renamed.*
+
+![Excel point importer: the four rows of examples/coordinates.csv converted to meters, placed as sketch points, and joined by the vertical and horizontal relations the grouping produces](assets/point_importer.png)
+
+*`examples/coordinates.csv` pushed through the importer's arithmetic re-implemented in Python: inches × 0.0254, origin offset, `1e-9` m grouping in `Relations.bas`, one relation from each group's anchor to every other member. The expected points match the [coordinate example](examples/README.md).*
+
+![Hole prototype: the 157 ANSI drill sizes in the macro, by family, and the nearest-size code chosen for four example diameters](assets/drill_codes.png)
+
+*The drill table is parsed out of `Create_holes_from_sketch_.bas` at run time, and the nearest-size rule is the macro's own loop. The code it picks is what goes into the `HoleWizard5` call.*
+
 ## Use and review
 
 1. Install SolidWorks on Windows. The point importer also requires desktop Excel. Recorded drawing paths originally referenced SolidWorks 2022; importer comments mention 2024. These are source clues, not a tested compatibility matrix.
@@ -50,6 +66,6 @@ See the [usage guide](docs/usage.md), [coordinate example](examples/coordinates.
 
 ## Provenance
 
-The supplied work is attributed to **Christinantony**. Recovery, organization, examples, and documentation were prepared for this portfolio. Binary originals remain in the owner's source archive; [SHA-256 hashes and module mappings](docs/inventory.json) record provenance. Published exports normalize whitespace, omit machine-specific recording comments, use example drawing paths, and export classes with `.cls` headers. The assembly default change is documented above. Algorithmic behavior is otherwise preserved.
+The supplied work is attributed to **Christinantony**. Recovery, organization, examples, documentation, and the illustrations in `assets/` (`tools/make_figures.py`) were prepared for this portfolio. Binary originals remain in the owner's source archive; [SHA-256 hashes and module mappings](docs/inventory.json) record provenance. Published exports normalize whitespace, omit machine-specific recording comments, use example drawing paths, and export classes with `.cls` headers. The assembly default change is documented above. Algorithmic behavior is otherwise preserved.
 
 No open-source license has been selected. See [rights notice](NOTICE.md).
